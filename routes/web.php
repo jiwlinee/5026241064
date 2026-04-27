@@ -44,7 +44,7 @@ Route::get('/pert4', function () {
 });
 
 Route::get('/pert5', function () {
-	return view('pertemuan5');
+	return view('pertemuan5-arsha');
 });
 
 Route::get('/tugaspert5', function () {
