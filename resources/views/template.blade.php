@@ -22,16 +22,16 @@
             <a class="nav-link active" href="/pegawai">Pegawai</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/keranjang">Keranjang</a>
+            <a class="nav-link" href="/siswa">Siswa</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Siswa</a>
+            <a class="nav-link" href="/keranjang">Keranjang Belanja</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">PR 2</a>
+            <a class="nav-link" href="/nilaikuliah">Nilai Kuliah</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">PR 3</a>
+            <a class="nav-link" href="/lipstick">Pra EAS Lipstick</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">EAS</a>

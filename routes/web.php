@@ -9,7 +9,8 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
 // contoh soal EAS
 use App\Http\Controllers\KeranjangBelanjaController;
-
+use App\Http\Controllers\NilaiKuliahController;
+use App\Http\Controllers\LipstickController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -91,3 +92,16 @@ Route::get('/keranjang', [KeranjangBelanjaController::class, 'index'])->name('ke
 Route::get('/keranjang/tambah', [KeranjangBelanjaController::class, 'create'])->name('keranjang.create');
 Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store'])->name('keranjang.store');
 Route::delete('/keranjang/batal/{id}', [KeranjangBelanjaController::class, 'destroy'])->name('keranjang.destroy');
+
+Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index'])->name('nilaikuliah.index');
+Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'create'])->name('nilaikuliah.create');
+Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store'])->name('nilaikuliah.store');
+Route::delete('/nilaikuliah/batal/{id}', [NilaiKuliahController::class, 'destroy'])->name('nilaikuliah.destroy');
+Route::get('/nilaikuliah/edit/{id}', [NilaiKuliahController::class, 'edit'])->name('nilaikuliah.edit');
+
+Route::get('/lipstick', [LipstickController::class, 'index'])->name('lipstick.index');
+Route::get('/lipstick/tambah', [LipstickController::class, 'create'])->name('lipstick.create');
+Route::post('/lipstick/store', [LipstickController::class, 'store'])->name('lipstick.store');
+Route::get('/lipstick/edit/{kodelipstick}', [LipstickController::class, 'edit'])->name('lipstick.edit');
+Route::put('/lipstick/update/{kodelipstick}', [LipstickController::class, 'update'])->name('lipstick.update');
+Route::delete('/lipstick/delete/{kodelipstick}', [LipstickController::class, 'destroy'])->name('lipstick.destroy');

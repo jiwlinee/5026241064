@@ -8,7 +8,7 @@
         <p style="color: green;">{{ session('success') }}</p>
     @endif
 
-    <a href="{{ route('siswa.create') }}">Tambah Siswa</a>
+    <a href="{{ route('siswa.create') }}" class="btn btn-primary">Tambah Siswa</a>
 
     <br><br>
 
