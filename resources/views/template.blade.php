@@ -34,7 +34,7 @@
             <a class="nav-link" href="/lipstick">Pra EAS Lipstick</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">EAS</a>
+            <a class="nav-link" href="/mypegawai">EAS mypegawai</a>
         </li>
         </ul>
     </div>

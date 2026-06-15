@@ -11,6 +11,7 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\KeranjangBelanjaController;
 use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\LipstickController;
+use App\Http\Controllers\MyPegawaiController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -105,3 +106,10 @@ Route::post('/lipstick/store', [LipstickController::class, 'store'])->name('lips
 Route::get('/lipstick/edit/{kodelipstick}', [LipstickController::class, 'edit'])->name('lipstick.edit');
 Route::put('/lipstick/update/{kodelipstick}', [LipstickController::class, 'update'])->name('lipstick.update');
 Route::delete('/lipstick/delete/{kodelipstick}', [LipstickController::class, 'destroy'])->name('lipstick.destroy');
+
+Route::get('/mypegawai', [MyPegawaiController::class, 'index'])->name('mypegawai.index');
+Route::get('/mypegawai/tambah', [MyPegawaiController::class, 'create'])->name('mypegawai.create');
+Route::post('/mypegawai/store', [MyPegawaiController::class, 'store'])->name('mypegawai.store');
+Route::get('/mypegawai/view/{kodepegawai}', [MyPegawaiController::class, 'view'])->name('mypegawai.view');
+Route::put('/mypegawai/update/{kodepegawai}', [MyPegawaiController::class, 'update'])->name('mypegawai.update');
+Route::delete('/mypegawai/delete/{kodepegawai}', [MyPegawaiController::class, 'destroy'])->name('mypegawai.destroy');
